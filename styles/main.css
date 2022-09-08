@@ -1,0 +1,86 @@
+body{
+  background-color: #f4f4f4;
+  color: #555555;
+
+  font-family: monospace, Arial, Helvetica, sans-serif;
+  font-size: 16px;
+  font-weight: normal;
+  
+  line-height:1.6em;
+  margin: 0;
+
+
+}
+a{
+  text-decoration: none;
+  color:#555555;
+
+}
+
+a:hover{
+  color:#ff0000;
+}
+
+
+
+.container{
+  /* makes the website more reponsive to use % when dealing with contianers */
+  width:80%;  
+  margin:auto;
+}
+
+.box-1{
+  background-color: #333;
+  color: #faebdf;
+
+  border-right: 5px red solid;
+  border-left: 5px red solid;
+
+  padding: 20px;
+
+  margin: 20px 0;
+  
+}
+
+.box-1 h1{
+  font-family: monospace;
+  font-weight: 800;
+  font-style: bold;
+  text-decoration: underline;
+  text-transform: uppercase;
+  letter-spacing: 0.2em;
+  word-spacing: 1em;
+}
+
+.box-2{
+  border: 3px dotted #ccc;
+  padding: 20px;
+  margin: 20px 0;
+  
+}
+
+.box-2 h2{
+  
+}
+
+.sprints{
+  border: 2px #ccc solid;
+  padding: 10px;
+  border-radius: 15px;
+}
+
+.sprints h2{
+  text-align: center;
+}
+
+.sprints ul{
+  padding: 0;
+  list-style: none;
+  letter-spacing: 0.2em;
+  
+}
+
+.sprints li{
+  padding-bottom: 8px;
+  border-bottom: dotted 1px #333;
+}
