@@ -1,86 +1,167 @@
-body{
-  background-color: #f4f4f4;
-  color: #555555;
-
-  font-family: monospace, Arial, Helvetica, sans-serif;
-  font-size: 16px;
-  font-weight: normal;
-  
-  line-height:1.6em;
+*{
+  padding: 0;
   margin: 0;
-
-
-}
-a{
   text-decoration: none;
-  color:#555555;
-
+  list-style: none;
+  box-sizing: border-box;
+  
+  overflow: hidden;
 }
 
-a:hover{
-  color:#ff0000;
+body{
+  font-family: monospace, Arial, Helvetica, sans-serif;
+  width: 100%;
 }
 
-
-
-.container{
-  /* makes the website more reponsive to use % when dealing with contianers */
-  width:80%;  
-  margin:auto;
-}
-
-.box-1{
-  background-color: #333;
+a.active,a:hover{
+  text-decoration: none;
   color: #faebdf;
+  color: #ff0000;
+  background: #060809;
+}
 
-  border-right: 5px red solid;
-  border-left: 5px red solid;
 
-  padding: 20px;
+nav{background: #555555;
+  margin: auto;
+  width: 100%;
 
-  margin: 20px 0;
+}
+
+label.logo{
+  color: #faebdf;
+  font-size: 35px;
+  line-height: 80px;
+  padding: 0 10px;
+  font-weight: bold;
+
+}
+
+nav ul{
+float: right;
+margin: auto;
+}
+
+nav ul li{
+  display: inline-block;
+  line-height: 80px;
+  margin: 0 5px;
+
+}
+
+nav ul li a{
+  font-size: 15px;
+  text-transform: uppercase;
+  padding: 17px 13px;
+  border-radius: 3px;
+  color: #faebdf;
+}
+
+
+
+/*.checkbtn{
+  font-size: 30px;
+  color: #faebdf;
+  float: right;
+  line-height: 80px;
+  margin-right: 40px;
+  cursor: pointer;
+  display: none;
+
+}
+
+#check{
+  display: none;
+
+}*/
+
+@media(max-width: 980px){
+  label.logo{
+    font-size: 30px;
+    padding-left: 50px;
+
+  }
+  nav ul li a{
+    font-size: 16px;
+  }
+  .box-1 h1{
+    font-size: 80px;
+  }
+}
+
+@media(max-width: 868px){
+
+  ul{
+    position: fixed;
+    width: 100%;
+    height: 100vh;  
+    background: #555555;
+    top: 80px;
+    left: 0;
+    text-align: center;
+  }
+  nav ul li{
+    display: block;
+  }
+  nav ul li a{
+    font-size: 20px;
+  }
+  a:hover,a.active{
+    background: none;
+    color: #0082e6;
+
+  }
+
+}
+
+
+
+/*makes the website more reponsive to use % when dealing with contianers*/
+
+/*.container{
+  width: 80%;  
+  margin:auto;
+}*/
+
+.section-1{
+  width: 100%;
+  margin: auto;
+}
+
+.section-2{
+  width: 100%;
+  margin: auto;
+}
+
+
+
+/*.clr{
+  clear: both;
+}*/
+
+
+.contianer{
+  background-color: #555555;
+  color: #faebdf;
+  max-width: 2184px;
+  padding: none;
+
+  margin: auto;
+  
   
 }
 
-.box-1 h1{
+.contianer h1{
   font-family: monospace;
-  font-weight: 800;
-  font-style: bold;
-  text-decoration: underline;
+  font-size: 60px;
+  font-weight: bold;
+  text-decoration: none;
   text-transform: uppercase;
   letter-spacing: 0.2em;
   word-spacing: 1em;
 }
 
-.box-2{
-  border: 3px dotted #ccc;
-  padding: 20px;
-  margin: 20px 0;
-  
+.section-2 p{
+  font-size: 20px;
 }
 
-.box-2 h2{
-  
-}
 
-.sprints{
-  border: 2px #ccc solid;
-  padding: 10px;
-  border-radius: 15px;
-}
-
-.sprints h2{
-  text-align: center;
-}
-
-.sprints ul{
-  padding: 0;
-  list-style: none;
-  letter-spacing: 0.2em;
-  
-}
-
-.sprints li{
-  padding-bottom: 8px;
-  border-bottom: dotted 1px #333;
-}
