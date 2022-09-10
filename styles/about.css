@@ -19,6 +19,11 @@ body{
   margin: 0 auto;
 }
 
+.img-naaso-geel{
+  width: 100%;
+  
+}
+
 .columns{
   display: flex;
 }
