@@ -14,7 +14,7 @@ body{
   margin: 0;
   background: pink;
 }
-/* from min widtn of 400px and bigger order is important
+/* from min widtn of 400px and bigger order is important*/
 @media(min-width: 400px){
 
   body{
