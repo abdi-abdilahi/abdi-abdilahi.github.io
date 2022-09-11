@@ -8,9 +8,11 @@
   overflow: hidden;
 }
 
+
 body{
   font-family: monospace, Arial, Helvetica, sans-serif;
   width: 100%;
+  background: pink;
 }
 
 a.active,a:hover{
@@ -57,8 +59,8 @@ nav ul li a{
 }
 
 
-
-/*.checkbtn{
+/*
+.checkbtn{
   font-size: 30px;
   color: #faebdf;
   float: right;
@@ -105,7 +107,7 @@ nav ul li a{
   nav ul li a{
     font-size: 20px;
   }
-  a:hover,a.active{
+  a:hover,a{
     background: none;
     color: #0082e6;
 
