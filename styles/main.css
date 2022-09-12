@@ -166,4 +166,231 @@ nav ul li a{
   font-size: 20px;
 }
 
+/* STYLING FOR ABOUT LINK*/
+
+/**{
+  padding: 0;
+  margin: 0;
+  text-decoration: none;
+  list-style: none;
+  box-sizing: border-box;
+  
+}
+*/
+body{
+  font-family: monospace, Arial, Helvetica, sans-serif;
+  width: 100%;
+  color: #555555;
+  margin: 0;
+  text-decoration: none;
+  box-sizing: border-box;
+  background: pink;
+}
+
+
+h1{
+  text-align: center;
+  margin: 16px;
+}
+p{
+
+  margin: 16px;
+}
+
+h2{
+  text-align: center;
+}
+
+p{
+  margin-top: 16px;
+
+}
+.contianer{
+  width: 95%;
+  max-width: 980px;
+  margin: 0 auto;
+}
+
+.contianer-nav{
+  display: flex;
+  justify-content: space-between;
+
+}
+header{
+  background: #555555;
+  padding: 30px 0;
+}
+
+.link-title{
+  color: #faebdf;
+  text-transform: uppercase;
+}
+
+
+.columns{
+  display: flex;
+  justify-content: space-between;
+  /*align-items: flex-start;
+  margin: 35px 0;*/
+
+  
+}
+
+
+.col-w1{
+  width: 45%;
+
+}
+
+.col-w2{
+width: 95%;
+
+
+}
+
+.col-w3{
+  width: 45%;
+}
+
+.col-bg{
+  background: #555555;
+  padding: 16px;
+  margin: 16px 0;
+  color: #faebdf;
+  
+}
+
+@media(max-width: 600px){
+  .columns{
+    flex-direction: column;
+  }
+  .col-w1,
+  .col-w2,
+  .col-w3{
+    width: 100%;
+
+  }
+}
+
+@media(max-width: 600px){
+  .contianer-nav{
+    flex-direction: column;
+  }
+  .link-title{
+    width: 100%;
+  }
+}
+
+/*label.logo{
+  padding: 0 16px;
+  font-weight: bold;
+  font-size: 35px;
+  color: #faebdf;
+}*/
+
+nav ul{
+  
+
+  list-style: none;
+  padding: 0;
+  display: flex;
+  justify-content: fle;
+  
+
+}
+
+nav li{
+  
+  margin: 0 16px;
+
+}
+
+
+nav a{
+  text-decoration: none;
+  color: #faebdf;
+  font-weight: 16px;
+  text-transform: uppercase;
+  border-radius: 3px;
+  padding: 17px 13px;
+
+
+}
+
+nav a:hover{
+  color: #ff0000;
+  background-color: #000;
+
+}
+
+
+
+
+
+/* from min widtn of 400px and bigger order is important
+@media(min-width: 400px){
+
+  body{
+    background: wheat;
+  }
+
+}
+
+/* from a min width of 650px and bigger
+@media(min-width: 500px){
+  body{
+    background: rgb(206, 200, 206) ;
+  }
+}
+*/
+
+
+
+/*
+nav{background: #555555;
+margin: auto;
+width: 100%;
+
+}
+
+label.logo{
+color: #faebdf;
+font-size: 35px;
+line-height: 80px;
+padding: 0 10px;
+font-weight: bold;
+
+}
+
+nav ul{
+float: right;
+margin: auto;
+}
+
+nav li{
+display: inline-block;
+line-height: 80px;
+margin: 0 5px;
+}
+
+nav a{
+font-size: 15px;
+text-transform: uppercase;
+padding: 17px 13px;
+border-radius: 3px;
+color: #faebdf;
+}
+@media(max-width: 300px){
+  nav a{
+    color: #555555;
+  }
+
+}
+
+
+nav a:hover{
+  color: aqua;
+}
+
+*/
 
