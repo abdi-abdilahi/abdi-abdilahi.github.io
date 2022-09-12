@@ -1,11 +1,11 @@
-*{
+/*{
   padding: 0;
   margin: 0;
   text-decoration: none;
   list-style: none;
   box-sizing: border-box;
   
- /* overflow: hidden; */
+  overflow: hidden; 
 }
 
 
@@ -29,26 +29,8 @@ nav{background: #555555;
 
 }
 
-label.logo{
-  color: #faebdf;
-  font-size: 35px;
-  line-height: 80px;
-  padding: 0 10px;
-  font-weight: bold;
 
-}
 
-nav ul{
-float: right;
-margin: auto;
-}
-
-nav ul li{
-  display: inline-block;
-  line-height: 80px;
-  margin: 0 5px;
-
-}
 
 nav ul li a{
   font-size: 15px;
@@ -74,7 +56,7 @@ nav ul li a{
 #check{
   display: none;
 
-}*/
+}
 
 @media(max-width: 980px){
   label.logo{
@@ -83,14 +65,14 @@ nav ul li a{
 
   }
   nav ul li a{
-    font-size: 16px;
+    font-size: 25px;
   }
   .box-1 h1{
     font-size: 80px;
-  }
-}
+  }*/
 
-@media(max-width: 868px){
+
+/*@media(max-width: 868px){
 
   ul{
     position: fixed;
@@ -124,7 +106,7 @@ nav ul li a{
   margin:auto;
 }*/
 
-.section-1{
+/*.section-1{
   width: 100%;
   margin: auto;
 }
@@ -154,7 +136,7 @@ nav ul li a{
 
 .contianer h1{
   font-family: monospace;
-  font-size: 60px;
+  font-size: 35px;
   font-weight: bold;
   text-decoration: none;
   text-transform: uppercase;
@@ -164,7 +146,7 @@ nav ul li a{
 
 .section-2 p{
   font-size: 20px;
-}
+}*/
 
 /* STYLING FOR ABOUT LINK*/
 
@@ -178,7 +160,7 @@ nav ul li a{
 }
 */
 body{
-  font-family: monospace, Arial, Helvetica, sans-serif;
+  font-family: monospace;
   width: 100%;
   color: #555555;
   margin: 0;
@@ -205,10 +187,13 @@ p{
   margin-top: 16px;
 
 }
+
+
 .contianer{
   width: 95%;
   max-width: 980px;
   margin: 0 auto;
+  border: 3px solid red;
 }
 
 .contianer-nav{
@@ -225,6 +210,7 @@ header{
   color: #faebdf;
   text-transform: uppercase;
 }
+
 
 
 .columns{
@@ -292,9 +278,9 @@ nav ul{
   
 
   list-style: none;
-  padding: 0;
+  padding: 17px 13px;
   display: flex;
-  justify-content: fle;
+  justify-content: flex-end;
   
 
 }
@@ -309,7 +295,7 @@ nav li{
 nav a{
   text-decoration: none;
   color: #faebdf;
-  font-weight: 16px;
+  font-weight: 20px;
   text-transform: uppercase;
   border-radius: 3px;
   padding: 17px 13px;
