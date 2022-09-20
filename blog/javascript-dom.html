@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link href="../styles/main.css" rel="stylesheet" type="text/css">
+        <title>Javascript and DOM</title>
+    </head>
+    <body>
+      <header>
+        <div class="contianer contianer-nav">
+          <div class="link-title">
+            <h1>Javascript and DOM</h1>
+          </div>
+          <nav>
+            <ul>
+              <li><a href="../index.html">Home</a></li>
+              <li><a href="../about.html">About</a></li>
+              <li><a href="../blog.html">Blog</a></li>
+            </ul>
+          </nav>
+        </div>
+      </header>
+        <h2>Kia Ora</h2>
+          <p>This is an ongoing project to showcase my journey at Dev Academy. I will updated weekly.</p>
+          <div class="columns">
+            <div class="col col-bg col-w3">
+              <h2>Use an analogy to describe JavaScript and its relationship to HTML and CSS?</h2>
+              <p>Going back to my analogy of a house, where the builder is HTML, whose purpose is to make sure that the house is structurally sound, and the interior/landscape designer's purpose is to give the house character. In this analogy, Javascript would be the architect responsible for the floor plans, such as where the window and doors go. If you imagine a door as an element in a building. Much like an element of HTML, the builder builds the door. The architect can manipulate this in the same way javascript uses the HTML elements to make changes. The architect can also add more features like a more expansive open-plan kitchen.</p>
+              <h2>Explain what functions are and why they are helpful?</h2>
+              <p>A function is a procedure that takes an input and returns an output. In javascript, functions are also an object because they can handle properties and methods like any other object. What distinguishes them from other objects is that functions can be called. The type of function we have used so far is a function declaration.
+                Function declaration begins with the keyword function followed by the function name. this would look like 
+                function ourFunctionName(){
+                //function properties go in between the curly braces 
+                }
+                then to call our function, we declare it by typing 
+                ourFunctionName().
+                a function has a parameter and an argument passed through the parenthesis.
+                If we wanted to add two numbers together and get the result back, we would pass the parameters a and b into the parenthesis and the argument between the brace.
+                for example, 
+                function ourFunctionName(a,b){
+                return a + b
+                }
+                ourFunctionName(a,b), we can chose a = 5 and b =10
+                and our function would return 15.
+                this is important in javascript because, as you can see from the above example, I can change the numbers that go into the parameters as often as I like. </p>
+            </div>
+            <div class= "col col-w3">
+              <h2 class="middle-col">Describe the DOM and an example of how you might interact with it. </h2>
+              <p>The Document Object Model is a programming interface for web documents. 
+                The way we change HTML with javascript is with the DOM. The DOM is the same as an Html document but is represented as a javascript object. The DOM is identical to the HTML on our page. So if we change anything on the DOM, our HTML automatically shares those changes and vice versa. 
+                The way we can interact with the DOM is through methods which are functions attached
+                to the documents objects. This can allow us to select a specific HTML element, for example, the header on our page, by writing document.querySelector('h1'). Another is properties. Using the same header we selected, we can write .style.color="red" to change the colour of the header. Finally, within the document object, we also have a sub-object, for example, when we select that header {h1}.addElementListener(), it will give us back an HTML element which is actually an object on the DOM. This sub-object has its own methods and properties as well. 
+              </p>
+              <h2 class="middle-col">Explain the difference between accessing data from arrays and objects.</h2>
+              <p>An array is used to store/retrieve a collection of the same type of things called elements. the way you would access the data is by an index. So, for example, the collection of the English alphabet from' A' to 'J' would have an index, starting from 0-9. if I wanted to access the third element in the array, I would need to specify the third position of the index. Here is how it would look:
+                array =['A' 'B' 'C' 'D' 'E' 'F' 'G' 'H' 'I' 'J']; array[2] = B.
+                An Object stores different pieces of data with a common identifier built on a predefined template called classes. Objects do not have indices, so the way you would retrieve the data from an object is to use the dot notation
+                let us say you had an object called arabicPronucation = 
+                {
+                A: 'Alif'
+                B: 'Ba'
+                T: 'Tha'
+                Tha: 'Theh'
+                J: 'Jim'
+                H: 'Ha'
+                KH: 'Kha'
+                D: 'Dal'
+                Th: 'Dhal
+                R: 'Ra'
+                }
+                we would write arabicPronucation.A = 'Alif'. </p>
+            </div>
+            <div class="col col-bg col-w1">
+              <h2>Explain control flow and loops using an example process from everyday life?</h2>
+              <p>
+                A control flow is an order in which a computer executes statements in a script. It is similar to how we humans read. For example, in English, we read from left to right, while in Arabic, we read from right to left. The order of a script is read by a computer from the first line to the last line. Unless it encounters a structure that changes the control flow, such as a 'for' loop or a 'conditional' statement.
+                
+                Loops are my rivals. They are essentially how you change the order of execution. There are serval loops, each loop for doing a specific task within a script. An example is how to pray salah step by step. First, we need some variables called: Standing, Takbir, Fatihah – Recitation, Ruku – Bowing, Sujud – Prostration and Tashahud – Sitting.
+                To understand the steps of the salah, it is essential to know that the prayer comprises rakah or units of prayer. Every rakah has the same basic steps within it. However, depending on the Salah you are performing, the number of Rakah varies.
+                
+                In step one, we first began the prayer by making an intention from the heart to pray to Allah. Your entire focus should be on the prayer itself and nothing else as soon as you begin.
+                
+                In step two, the salah will officially begin when you say the Takbir-i-Tahrimah. From this point forward, you should focus wholeheartedly on the prayer and do your best to ignore all distractions.
+                
+                In step three, lower your hands and place them over your naval. Your right hand should be placed over your left hand. Again, keep your eyes focused on the ground in front of you. Recite the opening chapter of the Koran.
+                
+                Step four, perform a ruku,
+                As you are bowing down, say the Takbir-i-Tahrimah. Make sure to keep your back straight, your hands on your knees, and your eyes focused on the ground where you will be prostrating.
+                
+                Step five, return to the standing position. As you are rising up from the ruku position to an upright position, you will bring your hands to your ears and will say:
+                'Samee Allahu leeman hameeda'
+                'Allah hears those who praise him.'
+                And when you are standing upright, then lower your hands to your waist and say:
+                'Rabbana walakal hamd'
+                'Our Lord, to You is all praise.'
+                
+                Step six, perform the sujud. As you are moving into this position, say Allahu Akbar. 
+                And also, make sure your forehead, nose, palms of both hands, knees, and toes are touching the ground. Then say this sentence three times:
+                'Subhanna rabbeeyal' Alaa.'
+                How perfect is my Lord, the Most High.
+                
+                Step seven, say Allahu akbar as you rise from sujud and sit on your left leg. Your left foot will rest on the floor while your right foot is upright. Place your hands on your knees.
+                When you are in this position, it is recommended to ask Allah for forgiveness. A simple and easy dua you can say is:
+                Rabbigh-fir lee
+                O my Lord, forgive me.
+                
+                Step eight, go back to step six.
+                
+                Step nine, arise to a standing position and start from step three.
+                
+                This is the completion of the first Rakah.
+                
+                When you've reached the end of step seven, we perform the Tashhud every second Rakat
+                
+                If this is the final Rakat, perform the extended Tashhud 
+                
+                After reciting the extended part of the tashahud, you will say the "tasleem."
+                The tasleem is to look to your right and say:
+                Assalamu alaykum wa rahmatu Allah
+                And then look to the left and repeat it:
+                Assalamu alaykum wa rahmatu Allah
+              </p>
+
+              </div>
+          </div>
+        </div>
+      <footer>
+        <p>Copyright &COPY; 2022, My Blog</p>
+      </footer>
+          
+    </body>
+</html>
