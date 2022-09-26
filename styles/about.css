@@ -32,7 +32,7 @@ a {
 
 }
 .links {
-  color: black;
+  color: beige;
   text-transform: uppercase;
   font-weight: 300;
   display: inline-block;
@@ -55,6 +55,10 @@ p {
 
 img {
   width: 100%;
+}
+
+.text-content{
+  color: #333;
 }
 
 /* ---Navbar style--- */
